@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>External Email Banner</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, Arial, sans-serif;
+      display: none;
+    }
+
+    .banner {
+      background-color: yellow;
+      color: #000000;
+      font-size: 12px;
+      padding: 8px 10px;
+      border-bottom: 1px solid #c9c900;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <span class="bold">Warning</span>:
+    This email originated from outside of the corporate email system.
+    <span class="bold">External Sender Address</span>:
+    <span id="sender"></span>
+  </div>
+
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <script src="banner.js"></script>
+</body>
+</html>
